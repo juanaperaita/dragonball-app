@@ -24,8 +24,8 @@ uvicorn main:app --reload
 - ```yarn```installed ```npm install --global yarn``` 
 
 ### Setup
-````
+```
 cd frontend
 yarn install
 yarn dev
-````
+```
