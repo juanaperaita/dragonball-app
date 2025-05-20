@@ -4,7 +4,8 @@
 
 ### Environ setup
 Start installing all packages.
-py```
+
+```
 # install dependencies
 uv sync
 ```
