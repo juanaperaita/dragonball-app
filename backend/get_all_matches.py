@@ -17,20 +17,10 @@ def get_all_matches(name_or_substring: str) -> List[Dict]:
     all_chars = resp.json()
     
     normalized_substr_or_name = name_or_substring.lower()
-    filtered: list[str]=[]
-    extracted_names: list[str]=[]
+    filtered: List[Dict] = []
 
     for char in all_chars:
-        name = char.get("name")
-        if name is not None and name !="":
-            extracted_names.append(name)
-    
-    for name in extracted_names:
-        lower_case_name = name.lower()
-        starts = lower_case_name.startswith(normalized_substr_or_name)
-        ends = lower_case_name.endswith(normalized_substr_or_name)
-        contains = normalized_substr_or_name in lower_case_name
-
-        if starts or ends or contains:
-            filtered.append(name)
+        name = char.get("name", "").lower()
+        if name.startswith(normalized_substr_or_name) or name.endswith(normalized_substr_or_name) or normalized_substr_or_name in name:
+            filtered.append(char)
     return filtered
