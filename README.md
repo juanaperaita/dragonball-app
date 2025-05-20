@@ -4,7 +4,7 @@
 
 ### Environ setup
 Start installing all packages.
-```
+py```
 # install dependencies
 uv sync
 ```
@@ -28,4 +28,4 @@ uvicorn main:app --reload
 cd frontend
 yarn install
 yarn dev
-```
+````
