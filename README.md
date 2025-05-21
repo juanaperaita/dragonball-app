@@ -3,7 +3,10 @@
 ## Backend
 
 ### Environ setup
-Start installing all packages.
+
+Install ⚡ [uv](https://github.com/astral-sh/uv) ⚡️for managing dependencies.
+
+Install all packages.
 
 ```
 # install dependencies
