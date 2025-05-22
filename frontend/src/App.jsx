@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Search from './components/Search'
 function App() {
@@ -8,7 +6,7 @@ function App() {
 
   return (
     <div>
-      <h1> Dragonball Search </h1>
+       <img src="/dragon-ball-letters.svg" alt="Dragon Ball Title" width={500} />
       <Search/>
     </div>
   )
