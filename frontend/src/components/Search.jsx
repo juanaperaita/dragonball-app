@@ -12,12 +12,13 @@ const Search = () => {
   return (
     <div>
       <input
+        className='select'
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Escribe el nombre"
       />
-      <button onClick={handleSearch}>
+      <button className='btn-custom' onClick={handleSearch}>
         Buscar
       </button>
       
